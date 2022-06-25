@@ -2,11 +2,11 @@ version: '2'
 
 services:
   orders:
-    build: 
+    build:
       context: .
       dockerfile: ./apps/orders/Dockerfile
       target: development
-    command: npm run start:dev orders 
+    command: npm run start:dev orders
     env_file:
       - ./apps/orders/.env
     depends_on:
@@ -17,7 +17,7 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     ports:
-      - "3000:3000"
+      - '3000:3000'
 
 
   mongodb-primary:

@@ -10,7 +10,7 @@ node_modules
 # Environment (contains sensitive data)
 *.env
 
-#Misc
+# Misc
 .eslintrc.js
-.prettierrc.js
+.prettierrc
 README.md
