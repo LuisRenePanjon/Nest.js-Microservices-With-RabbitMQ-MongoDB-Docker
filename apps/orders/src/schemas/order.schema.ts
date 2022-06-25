@@ -8,7 +8,7 @@ export class Order extends AbstractDocument {
     name: string;
     
     @Prop()
-    description: string;
+    phoneNumber: string;
 
     @Prop()
     price: number;
